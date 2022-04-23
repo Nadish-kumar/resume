@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Me | FULL STACK DEVELOPER</title>
+  <script src="https://kit.fontawesome.com/19496804a6.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <script defer src="./javascript/script1.js"></script>
+</head>
+
+<body>
+  <header class="header-inner">
+    <div class="container">
+      <nav class="main-nav">
+        <p>Nadish Kumar</p>
+        <!-- <img src="./img/mylogo.png" alt="my-portfolio" class="logo" /> -->
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="contact.html" class="current">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- About me -->
+  <section class="section-R section-hidden">
+    <div class="container">
+      <div class="contact-container">
+        <div class="contact-content">
+          <h4>Expert in field</h4>
+          <h1>
+            WHERE I AM ? <br />
+            LET'S FIND OUT !
+          </h1>
+          <div class="bottom-line"></div>
+          <h3>Personal Info</h3>
+          <ul>
+            <li>
+              <i class="fa-solid fa-file-signature"></i> P. Nadish Kumar
+            </li>
+            <li>
+              <i class="fa-brands fa-linkedin"></i>
+              <a href="https://www.linkedin.com/in/nadish-kumar-19b53322a/" target="_blank">
+                https://www.linkedin.com/in/nadish-kumar</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot fa-1x"></i> 348 3rd Street, Sivanatha Nagar
+              Sivakasi, TamilNadu
+            </li>
+            <li>
+              <i class="fa-solid fa-mobile-button fa-1x"></i> +91 88256 -
+              37070
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope fa-1x"></i>
+              kumarnadi22@gmail.com
+            </li>
+            <li>
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <a href="https://drive.google.com/file/d/1-S5DCzKTZybVZpsv323fqQfRqlWHus9a/view?usp=sharing"
+                target="_blank">
+                Download CV
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-form">
+          <h2>DROP ME MESSAGE</h2>
+          <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+            <label for="name"></label>
+            <input type="text" id="name" placeholder="Name" name="name" required />
+            <label for="Email"></label>
+            <input type="email" id="Email" placeholder="Email" name="email" required />
+            <label for="Message"></label>
+            <textarea name="Message" id="Message" cols="35" rows="7" placeholder=" Message"></textarea>
+            <button class="contact-btn" type="submit">CONTACT ME</button>
+            <div class="my-2">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31485.064044862775!2d77.77184915985389!3d9.453543082830064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06cee2a578d107%3A0xb7266958e9635b02!2sSri%20Kaliswari%20Le%20Orchids!5e0!3m2!1sen!2sin!4v1645500137814!5m2!1sen!2sin"
+      width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+  <!-- hire ME -->
+
+  <!-- certificates -->
+
+  <!-- footer -->
+  <footer class="bg-Darker">
+    <div class="container">
+      <div class="footer-container">
+        <div class="copy">
+          <p>Copyright © 2022. All Rights Reserved</p>
+        </div>
+        <div class="social">
+          <i class="fab fa-facebook fa-2x"></i>
+          <i class="fa-brands fa-linkedin fa-2x"></i>
+          <i class="fa-brands fa-instagram fa-2x"></i>
+          <i class="fa-brands fa-twitter fa-2x"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./javascript/script-about.js"></script>
+</body>
+
+</html>

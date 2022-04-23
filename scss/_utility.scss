@@ -1,0 +1,83 @@
+.container {
+  max-width: $website-Width;
+  padding: 0 1.2rem;
+  margin: auto;
+  overflow: hidden;
+}
+// flex clear
+.clear {
+  clear: both;
+}
+// bg
+.bg-Light {
+  background: #f4f4f4;
+}
+.bg-white {
+  background: white;
+}
+.bg-Dark {
+  background: #ccc;
+}
+.bg-Darker {
+  background-color: $dark-color;
+}
+.bg-Primary {
+  background-color: $main-color;
+  color: white;
+}
+// section-hidden
+.section-hidden {
+  transform: translateY(8rem);
+  opacity: 0;
+}
+
+.section-R {
+  transition: all 1s;
+}
+// btns
+%btn-shared {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+}
+.btn-light {
+  @extend %btn-shared;
+  background-color: $light-color;
+  color: $dark-color;
+}
+
+.btn-main {
+  @extend %btn-shared;
+  background-color: $main-color;
+  color: $dark-color;
+}
+.btn-dark {
+  @extend %btn-shared;
+  background-color: $dark-color;
+  color: $light-color;
+}
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: $main-color;
+}
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+// bottom line
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: #ffbc00;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+// section
+.my-2 {
+  margin: 2rem 2rem 2rem 0;
+}
